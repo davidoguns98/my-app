@@ -1,11 +1,11 @@
 import DogList from "./DogList";
 import Search from "./Search";
 
-function AllBreeds() {
+function AllBreeds({ dogs }) {
   return (
     <div>
       <Search />
-      <DogList />
+      <DogList dogs={dogs} />
     </div>
   );
 }

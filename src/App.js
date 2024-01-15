@@ -10,8 +10,9 @@ function App() {
     async function AllDogs() {
       const res = await fetch("https://dog.ceo/api/breeds/list/all");
       const data = await res.json();
-      console.log(data);
-      setDogs(data);
+      const allDogs = Object.values(data.message);
+      console.log(allDogs);
+      setDogs(allDogs);
     }
     AllDogs();
   }, []);
