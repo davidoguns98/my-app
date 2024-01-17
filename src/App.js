@@ -2,25 +2,27 @@ import Main from "./components/Main";
 import "./App.css";
 import AllBreeds from "./components/AllBreeds";
 import { useEffect, useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
-  const [dogs, setDogs] = useState([]);
+  // const [dogs, setDogs] = useState([]);
 
-  useEffect(function () {
-    async function AllDogs() {
-      const res = await fetch("https://dog.ceo/api/breeds/list/all");
-      const data = await res.json();
-      const allDogs = Object.values(data.message);
-      console.log(allDogs);
-      setDogs(allDogs);
-    }
-    AllDogs();
-  }, []);
+  // useEffect(function () {
+  //   async function AllDogs() {
+  //     const res = await fetch("https://dog.ceo/api/breeds/list/all");
+  //     const data = await res.json();
+  //     const allDogs = Object.values(data.message);
+  //     console.log(allDogs);
+  //     setDogs(allDogs);
+  //   }
+  //   AllDogs();
+  // }, []);
 
   return (
-    <div>
+    <div className="app">
       <Main />
-      <AllBreeds dogs={dogs} />
+      <AllBreeds />
+      <Footer />
     </div>
   );
 }

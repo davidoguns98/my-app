@@ -1,0 +1,42 @@
+.container {
+}
+.eachDog {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 20rem;
+  height: auto;
+  padding: 1rem 1.2rem;
+  border: 1px solid #461f1f;
+  border-radius: 4px;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
+  transition: 0.2s all;
+  cursor: pointer;
+}
+.eachDog:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+.image {
+}
+.title {
+  text-align: center;
+  font: 800;
+}
+.description {
+  text-align: center;
+}
+.link:link,
+.link:visited {
+  display: inline-block;
+  width: 7.5rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid gray;
+  border-radius: 3px;
+  background-color: #461f1f;
+  color: white;
+  text-decoration: none;
+  margin: 0 5rem;
+  transition: 0.3s all;
+  text-transform: uppercase;
+}

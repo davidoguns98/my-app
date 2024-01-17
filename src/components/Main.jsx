@@ -9,10 +9,13 @@ function Main() {
         <div className={styles.container}>
           <div className={styles.text}>
             <div>
-              <p>Hi, We help you find your favorite dog breed</p>
+              <h3>Hi, We help you find your favorite dog breed</h3>
               <p>
-                We provide awesome breeds and have been consistent for years
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                quibusdam soluta laudantium vero, dolor quos iusto delectus!
+                Quo, dolores asperiores.
               </p>
+              <a href="#">See more</a>
             </div>
           </div>
           <div className={styles.firstImage}>

@@ -1,7 +1,11 @@
 .logoCase {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  background-image: linear-gradient(to bottom, #e3e2d9, #6f6e69);
+  overflow: hidden;
+  border-radius: 5px;
 }
 .logo {
   width: 100%;
+  opacity: 0.7;
+  border-radius: 50%;
 }

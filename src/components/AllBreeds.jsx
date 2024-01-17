@@ -1,9 +1,10 @@
 import DogList from "./DogList";
 import Search from "./Search";
+import styles from "./AllBreeds.module.css";
 
 function AllBreeds({ dogs }) {
   return (
-    <div>
+    <div className={styles.allBreeds}>
       <Search />
       <DogList dogs={dogs} />
     </div>

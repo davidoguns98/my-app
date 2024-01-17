@@ -1,26 +1,20 @@
 .header {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+}
+.nav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.header ul {
+.nav ul li {
   list-style: none;
-  display: flex;
-  background-color: var(--color-dark--2);
-  border-radius: 7px;
+  display: inline-block;
+  margin: 2rem;
 }
-
-.header a:link,
-.header a:visited {
-  display: block;
-  color: inherit;
+.nav ul li a {
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding: 0.5rem 2rem;
-  border-radius: 5px;
+  color: white;
 }
