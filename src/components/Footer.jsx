@@ -9,7 +9,7 @@ function Footer() {
         <p>Phone: 09039737396</p>
       </div>
       <div>
-        <h3>We are waitin for your visit</h3>
+        <h3>We are waiting for your visit</h3>
         <p>Github: </p>
         <p>LinkedIn: </p>
       </div>
