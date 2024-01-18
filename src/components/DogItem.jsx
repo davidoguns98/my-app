@@ -1,6 +1,6 @@
 // import { useEffect } from "react";
 import styles from "./DogItem.module.css";
-function DogItem() {
+function DogItem({ dogs }) {
   return (
     <div className={styles.container}>
       <div className={styles.eachDog}>

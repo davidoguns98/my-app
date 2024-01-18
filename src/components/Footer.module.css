@@ -1,2 +1,31 @@
-.footer {
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 5rem;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #5a5353, #461f1f);
+}
+.footerText {
+  width: 33.333%;
+  display: inline-block;
+}
+.footerText h3 {
+  font-size: 2rem;
+}
+.footerText p {
+  font-size: 1.4rem;
+}
+.image {
+  width: 10rem;
+  background-image: linear-gradient(to bottom, #5a5353, #461f1f);
+}
+.image img {
+  width: 100%;
+  opacity: 0.7;
 }

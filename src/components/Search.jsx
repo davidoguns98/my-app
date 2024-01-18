@@ -1,7 +1,7 @@
 import styles from "./Search.module.css";
 function Search() {
   return (
-    <div>
+    <div className={styles.search}>
       <label htmlFor="search" className={styles.label}>
         Enter a breed of choice
       </label>

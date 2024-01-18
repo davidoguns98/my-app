@@ -5,23 +5,24 @@ import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 
 function App() {
-  // const [dogs, setDogs] = useState([]);
+  const [dogs, setDogs] = useState([]);
 
-  // useEffect(function () {
-  //   async function AllDogs() {
-  //     const res = await fetch("https://dog.ceo/api/breeds/list/all");
-  //     const data = await res.json();
-  //     const allDogs = Object.values(data.message);
-  //     console.log(allDogs);
-  //     setDogs(allDogs);
-  //   }
-  //   AllDogs();
-  // }, []);
+  useEffect(function () {
+    async function AllDogs() {
+      const res = await fetch("https://dog.ceo/api/breeds/list/all");
+      const data = await res.json();
+      const allDogs = Object(data.message);
+      console.log(allDogs);
+      setDogs(allDogs);
+    }
+
+    AllDogs();
+  }, []);
 
   return (
     <div className="app">
       <Main />
-      <AllBreeds />
+      <AllBreeds dogs={dogs} />
       <Footer />
     </div>
   );
