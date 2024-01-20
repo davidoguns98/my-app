@@ -16,6 +16,7 @@
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
 .image {
+  height: 30vh;
 }
 .title {
   text-align: center;

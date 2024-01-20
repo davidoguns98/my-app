@@ -7,7 +7,7 @@ function DogList({ dogs }) {
       <h2 className={styles.header}>Available Dog Breeds</h2>
       <div className={styles.gridContainer}>
         {dogs.map((dogName) => (
-          <DogItem dogName={dogName} />
+          <DogItem dogName={dogName} key={dogName} />
         ))}
         {/* <DogItem />
         <DogItem />

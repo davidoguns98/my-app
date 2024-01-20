@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 
 function App() {
   const [dogs, setDogs] = useState([]);
+  const [search, setSearch] = useState("");
+  const [foundDog, setFoundDog] = useState("");
 
   useEffect(function () {
     async function AllDogs() {
@@ -19,10 +21,26 @@ function App() {
     AllDogs();
   }, []);
 
+  const handleSubmit = async function searchItem(e) {
+    e.preventDefault();
+    const searched = await fetch(
+      ` https://dog.ceo/api/breed/${search}/images/random`
+    );
+    const foundItem = await searched.json();
+    console.log(foundItem);
+    setFoundDog(foundItem);
+  };
+
   return (
     <div className="app">
       <Main />
-      <AllBreeds dogs={dogs} />
+      <AllBreeds
+        dogs={dogs}
+        setSearch={setSearch}
+        handleSubmit={handleSubmit}
+        search={search}
+        foundDog={foundDog}
+      />
       <Footer />
     </div>
   );

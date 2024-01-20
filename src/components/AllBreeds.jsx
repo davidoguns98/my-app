@@ -1,12 +1,17 @@
 import DogList from "./DogList";
 import Search from "./Search";
 import styles from "./AllBreeds.module.css";
+import SearchedItem from "./SearchedItem";
 
-function AllBreeds({ dogs }) {
+function AllBreeds({ dogs, setSearch, handleSubmit, search, foundDog }) {
   return (
     <div className={styles.allBreeds}>
-      <Search />
-      <DogList dogs={dogs} />
+      <Search
+        handleSubmit={handleSubmit}
+        setSearch={setSearch}
+        search={search}
+      />
+      {search ? <SearchedItem /> : <DogList dogs={dogs} />}
     </div>
   );
 }

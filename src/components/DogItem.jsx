@@ -10,7 +10,9 @@ function DogItem({ dogName }) {
         const resImage = await fetch(
           `https://dog.ceo/api/breed/${breed}/images/random`
         );
-        const URL = resImage.url;
+
+        const result = await resImage.json();
+        const URL = result.message;
         console.log(URL);
         setImages(URL);
       }

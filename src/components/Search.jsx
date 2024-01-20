@@ -1,7 +1,5 @@
-import { useState } from "react";
 import styles from "./Search.module.css";
-function Search() {
-  const [search, setSearch] = useState("");
+function Search({ handleSubmit, setSearch, search }) {
   return (
     <form className={styles.search}>
       <label htmlFor="search" className={styles.label}>
@@ -13,8 +11,9 @@ function Search() {
         type="text"
         placeholder="Search for a breed"
         value={search}
-        onChange={(e) => e.target.value}
+        onChange={(e) => setSearch(e.target.value)}
       />
+      <button onSubmit={handleSubmit}>search</button>
     </form>
   );
 }
