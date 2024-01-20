@@ -1,3 +1,7 @@
+.sectionContainer {
+  width: 100%;
+  background-color: bisque;
+}
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -8,6 +12,7 @@
 .header {
   text-align: center;
   font-size: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  margin-top: 0;
 }

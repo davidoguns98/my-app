@@ -11,7 +11,7 @@ function App() {
     async function AllDogs() {
       const res = await fetch("https://dog.ceo/api/breeds/list/all");
       const data = await res.json();
-      const allDogs = Object(data.message);
+      const allDogs = Object.keys(data.message);
       console.log(allDogs);
       setDogs(allDogs);
     }
