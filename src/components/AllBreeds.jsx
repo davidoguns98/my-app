@@ -2,8 +2,10 @@ import DogList from "./DogList";
 import Search from "./Search";
 import styles from "./AllBreeds.module.css";
 import SearchedItem from "./SearchedItem";
+import { useBreeds } from "../context/BreedContext";
 
-function AllBreeds({ dogs, setSearch, handleSubmit, search, foundDog }) {
+function AllBreeds() {
+  const { dogs, setSearch, handleSubmit, search } = useBreeds();
   return (
     <div className={styles.allBreeds}>
       <Search
